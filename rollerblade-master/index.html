@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>无标题文档</title>
+
+
+
+<link rel="stylesheet" href="rollerblade.css">
+
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="rollerblade.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+
+    // You can specify an array of images outside of the rollerblade method,
+
+    // and then pass it in, as so:
+
+
+
+//  var arrayOfImages = [
+//
+//    'img/m1.jpg',
+//
+//    'img/m2.jpg',
+//
+//    'img/m3.jpg',
+//
+//    'img/m4.jpg',
+//
+//    'img/m5.jpg',
+//
+//	  'img/m6.jpg',
+//
+//	  'img/m7.jpg'
+//  ]
+	
+	var arrayOfImages = [
+
+      'imgs/1.png',
+
+      'imgs/2.png',
+
+      'imgs/3.png',
+
+      'imgs/4.png',
+
+      'imgs/5.png',
+
+	  'imgs/6.png',
+
+	  'imgs/7.png'
+    ]
+
+
+    $("#target").rollerblade({imageArray:arrayOfImages});
+
+
+
+    // OR you can create the array directly in the options object, as so:
+
+
+
+//  $("#target").rollerblade({imageArray:[
+//
+//    'path/to/image/1.jpg',
+//
+//    'path/to/image/2.jpg',
+//
+//    'path/to/image/3.jpg',
+//
+//    'path/to/image/4.jpg',
+//
+//    'and/so/on.jpg'
+//
+//  ]});
+
+
+
+  })
+
+
+
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+<p>按住鼠标拖动查看效果</p>
+
+
+
+<div id="target">
+  <img class="rollerblade-img" src="imgs/1.png">
+</div>
+
+
+
+</body>
+
+</html>
+
